@@ -1,0 +1,50 @@
+; some comment
+
+default hours 8h  ; from util
+default project unbooked
+default text "!!sumup!!"
+
+; default project from 2023-11-12 until 2023-11
+
+project otp       "Off Project Time"
+project admin     "Admin"                   "TICKET-1234"
+project vacation
+
+project unbooked  "Unbooked Time"
+
+; include "somefile.ptt"
+
+project { 
+    key     hello-world
+    name    "Hello World Project"
+    alias   hw
+    alias   helw
+    ticket  "TICKET-12345"
+}
+
+2023-11-12 { 
+    > 08:00
+    < 17:00
+    some test hello world  ....
+    hello world  12m
+    hello world  45m
+    hello-world {
+        hello world  1h
+    }
+}
+
+2023-11-13 { 
+    > 08:00
+    < 18:00
+    some code session  13m
+    team meeting  45m
+    support for customer  ...
+    hello-world {
+        hello world  15h
+    }
+}
+
+2023-11-14 {
+    > 13:00
+}
+
